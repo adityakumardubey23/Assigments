@@ -1,0 +1,107 @@
+
+TIME COMPLEXITY SOLUTIONS
+
+Q1: O(n)
+Reason: The loop runs from 0 to n-1, so it executes n times.
+
+Q2: O(n²)
+Reason: Both loops run n times. Total work = n × n = n².
+
+Q3: O(n²)
+Reason: Inner loop runs 0,1,2,...,(n−1) times.
+Total = 0+1+2+...+(n−1) = n(n−1)/2 = O(n²).
+
+Q4: O(log n)
+Reason: i doubles every iteration (1,2,4,8,...).
+
+Q5: O(log n)
+Reason: i is divided by 2 every iteration.
+
+Q6: O(n log n)
+Reason: Outer loop runs n times and inner loop runs log n times.
+
+Q7: O(n)
+Reason: n decreases by 1 until it becomes 0.
+
+Q8: O(log n)
+Reason: n is divided by 2 repeatedly.
+
+Q9: O(n)
+Reason: Two separate O(n) loops.
+O(n)+O(n)=O(n).
+
+Q10: O(n²)
+Reason: O(n)+O(n²). Dominant term is n².
+
+Q11: O(n³)
+Reason: Outer loop = n and inner loop = n².
+Total = n × n² = n³.
+
+Q12: O(log n)
+Reason: i is multiplied by 3 each time.
+
+Q13: O(n³)
+Reason: Total work = 1²+2²+...+n² = O(n³).
+
+Q14: O(n)
+Reason: One recursive call is made until n becomes 0.
+
+Q15: O(log n)
+Reason: n becomes n/2 in every recursive call.
+
+Q16: O(2ⁿ)
+Reason: Every call generates two more calls.
+T(n)=2T(n−1)+1.
+
+Q17: O(2ⁿ)
+Reason: Naive Fibonacci creates an exponential recursion tree.
+
+Q18: O(n)
+Reason: One recursive call per level.
+
+Q19: O(n)
+Reason: Function calls itself n times.
+
+Q20: O(log n)
+Reason: n is halved in each recursive call.
+
+RECURRENCE RELATIONS
+
+Q21: T(n)=T(n−1)+1
+Answer: O(n)
+Reason: Expanding gives n additions.
+
+Q22: T(n)=T(n−1)+n
+Answer: O(n²)
+Reason: Sum = n+(n−1)+...+1.
+
+Q23: T(n)=T(n/2)+1
+Answer: O(log n)
+Reason: Problem size halves each step.
+
+Q24: T(n)=2T(n−1)+1
+Answer: O(2ⁿ)
+Reason: Binary recursion tree.
+
+Q25: T(n)=T(n/2)+n
+Answer: O(n)
+Reason: By Master Theorem.
+
+BONUS QUESTIONS
+
+Q26: O(n log n)
+Reason: Inner loop runs log(i) times.
+Total ≈ n log n.
+
+Q27: O(n log n)
+Reason: Outer loop = log n, inner loop = n.
+
+Q28: O(n²)
+Reason: n+(n−1)+...+1 = n(n+1)/2.
+
+Q29: O(n log n)
+Reason: Outer loop = n, inner loop = log n.
+
+Q30: O(n)
+Reason: T(n)=2T(n/2)+1.
+Using Master Theorem, complexity is O(n).
