@@ -1,0 +1,80 @@
+GATE Complexity Solutions
+
+Q1.
+T(n)=T(n/2)+T(2n/5)+7n
+Since (1/2 + 2/5)=0.9 < 1, total recursive work decreases geometrically.
+Hence,
+T(n)=Θ(n).
+
+Q2.
+By Master Theorem:
+T(n)=Θ(n log n) when:
+a=b and f(n)=Θ(n).
+(Equivalent form: n^(log_b a)=n and f(n)=Θ(n log^0 n).)
+
+Q3.
+The algorithm compares adjacent elements exactly once.
+Running time = Θ(N).
+
+Q4.
+1³+2³+...+n³ = [n(n+1)/2]² = Θ(n⁴).
+Correct options:
+• Θ(n⁴)
+• O(n⁵)
+• Ω(n³)
+
+Q5.
+Outer loop runs Θ(n) times.
+Middle loop: Θ(log n).
+So p=Θ(log n).
+Last loop doubles k each time → Θ(log log n).
+Therefore,
+q = Θ(n log log n).
+
+Q6.
+Work = n+n/2+n/4+...
+=2n.
+Complexity = Θ(n).
+
+Q7.
+Total iterations:
+1+2+...+n = n(n+1)/2.
+Complexity = Θ(n²).
+
+Q8.
+T(n)=2T(n/2)+Θ(1).
+Master Theorem:
+Complexity = Θ(n).
+
+Q9.
+Naive Fibonacci:
+T(n)=T(n−1)+T(n−2)+Θ(1).
+Complexity = Θ(2ⁿ).
+
+Q10.
+Increasing order:
+n log n
+< n^(3/2)
+< n^(log₂ n)
+< 2ⁿ
+
+Q11.
+T(n)=T(n−1)+1
+= Θ(n).
+
+Q12.
+T(n)=T(n−1)+n
+= Θ(n²).
+
+Q13.
+T(n)=2T(n−1)+1
+= Θ(2ⁿ).
+
+Q14.
+T(n)=T(n/2)+1
+= Θ(log n).
+
+Q15.
+Outer loop = Θ(log n).
+Inner loop = Θ(n).
+Total complexity = Θ(n log n).
